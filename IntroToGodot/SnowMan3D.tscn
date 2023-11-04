@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://fvbtnor0bney"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_jvn1r"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_otfq1"]
+
+[node name="MeshInstance3D" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.244541, 0)
+mesh = SubResource("SphereMesh_jvn1r")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, 0.558352, 0)
+mesh = SubResource("SphereMesh_jvn1r")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1.04314, 0)
+mesh = SubResource("SphereMesh_jvn1r")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.0038441, -0.734887, 0.0102963, -0.0124163, 0.261134, 0.0274101, -0.0196912, -0.021194, -0.0192934, 0.536697, 0.699194, 0.00288439)
+mesh = SubResource("BoxMesh_otfq1")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0100321, -0.700123, -0.00413866, -0.0213531, -0.32744, -0.00243211, 0.0002998, 0.106346, -0.034735, -0.572158, 0.658641, 0)
+mesh = SubResource("BoxMesh_otfq1")

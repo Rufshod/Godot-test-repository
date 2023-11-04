@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4talqmphg3kb"]
+
+[ext_resource type="Script" path="res://puck.gd" id="1_8b1ke"]
+[ext_resource type="Texture2D" uid="uid://ddjnqcoxvjpuc" path="res://icon.svg" id="2_as66m"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p42sl"]
+
+[node name="puck" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource("1_8b1ke")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(3, 3)
+shape = SubResource("CircleShape2D_p42sl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+scale = Vector2(0.365, 0.365)
+texture = ExtResource("2_as66m")
